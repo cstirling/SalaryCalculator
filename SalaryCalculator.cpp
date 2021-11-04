@@ -20,33 +20,33 @@ int main()
     double inputEWai = 1;
     double inputZhuanXiang = 18;
 
-    puts("##########±¾³ÌĞòÊÊÓÃÓÚÉÏº£µØÇøµÄ¸öË°ºÍÎåÏÕÒ»½ğ¼ÆËã##########");
+    puts("##########æœ¬ç¨‹åºé€‚ç”¨äºä¸Šæµ·åœ°åŒºçš„ä¸ªç¨å’Œäº”é™©ä¸€é‡‘è®¡ç®—##########");
 
-    printf("\nÇëÊäÈëÃ¿¸öÔÂË°Ç°Ğ½×Ê£¬µ¥Î»ÎªÇ§Ôª£¨ÀıÈç2±íÊ¾2Ç§£©£º ");
+    printf("\nè¯·è¾“å…¥æ¯ä¸ªæœˆç¨å‰è–ªèµ„ï¼Œå•ä½ä¸ºåƒå…ƒï¼ˆä¾‹å¦‚2è¡¨ç¤º2åƒï¼‰ï¼š ");
     scanf("%lf",&inputShuiQian);
     inputShuiQian *= 1000;
     if(inputShuiQian < gongJiJinLowerBound)
     {
-        printf("\nÇë¼ì²éÊäÈë£¬ÉÏº£×îµÍ¹¤×ÊÎª%.2fÔª\n", gongJiJinLowerBound);
+        printf("\nè¯·æ£€æŸ¥è¾“å…¥ï¼Œä¸Šæµ·æœ€ä½å·¥èµ„ä¸º%.2få…ƒ\n", gongJiJinLowerBound);
         return 0;
     }
 
-    printf("\nÇëÊäÈëÃ¿¸öÔÂ·¿²¹£¬µ¥Î»ÎªÇ§Ôª£¨ÀıÈç2±íÊ¾2Ç§£©£º ");
+    printf("\nè¯·è¾“å…¥æ¯ä¸ªæœˆæˆ¿è¡¥ï¼Œå•ä½ä¸ºåƒå…ƒï¼ˆä¾‹å¦‚2è¡¨ç¤º2åƒï¼‰ï¼š ");
     scanf("%lf",&inputFangBu);
     inputFangBu *= 1000;
 
-    printf("\nÇëÊäÈëÒ»Äê¶îÍâÊÕÈë£¨Ç©×Ö·ÑµÈ£©£¬µ¥Î»ÎªÇ§Ôª£¨ÀıÈç2±íÊ¾2Ç§£©£º ");
+    printf("\nè¯·è¾“å…¥ä¸€å¹´é¢å¤–æ”¶å…¥ï¼ˆç­¾å­—è´¹ç­‰ï¼‰ï¼Œå•ä½ä¸ºåƒå…ƒï¼ˆä¾‹å¦‚2è¡¨ç¤º2åƒï¼‰ï¼š ");
     scanf("%lf",&inputEWai);
     inputEWai *= 1000;
 
-    printf("\nÇëÊäÈë¹«»ı½ğ±ÈÂÊ£¬µ¥Î»Îª°Ù·ÖºÅ£¨ÀıÈç12±íÊ¾12%£©£º ");
+    printf("\nè¯·è¾“å…¥å…¬ç§¯é‡‘æ¯”ç‡ï¼Œå•ä½ä¸ºç™¾åˆ†å·ï¼ˆä¾‹å¦‚12è¡¨ç¤º12%ï¼‰ï¼š ");
     scanf("%lf",&gongJiJinRate);
     gongJiJinRate /= 100;
 
-    printf("\nÇëÊäÈëÊµ¼ÊÔÂ·İÊıÁ¿£¨°üº¬ÄêÖÕ£©£¬µ¥Î»ÎªÔÂ£¨ÀıÈç16±íÊ¾16¸öÔÂ¹¤×Ê£©£º ");
+    printf("\nè¯·è¾“å…¥å®é™…æœˆä»½æ•°é‡ï¼ˆåŒ…å«å¹´ç»ˆï¼‰ï¼Œå•ä½ä¸ºæœˆï¼ˆä¾‹å¦‚16è¡¨ç¤º16ä¸ªæœˆå·¥èµ„ï¼‰ï¼š ");
     scanf("%lf",&inputYueShu);
 
-    printf("\nÇëÊäÈëÃ¿Äê×¨ÏîµÖË°¶î¶È£¬µ¥Î»ÎªÇ§Ôª£¨ÀıÈç×â·¿×¨Ïî18±íÊ¾18Ç§£©£º ");
+    printf("\nè¯·è¾“å…¥æ¯å¹´ä¸“é¡¹æŠµç¨é¢åº¦ï¼Œå•ä½ä¸ºåƒå…ƒï¼ˆä¾‹å¦‚ç§Ÿæˆ¿ä¸“é¡¹18è¡¨ç¤º18åƒï¼‰ï¼š ");
     scanf("%lf",&inputZhuanXiang);
     inputZhuanXiang *= 1000;
 
@@ -69,25 +69,25 @@ int main()
         else if(rest <= 300000) tax = rest * 0.2 - 16920;
         else if(rest <= 420000) tax = rest * 0.25 - 31920;
         else if(rest <= 660000) tax = rest * 0.3 - 52920;
-        else if(rest <= 96000) tax = rest * 0.35 - 85920;
+        else if(rest <= 960000) tax = rest * 0.35 - 85920;
         else tax = rest * 0.45 - 181920;
         rest -= tax - taxJianmian;
     }
 
-    puts("\n##########ÕûÄêµÄ¿ªÏúÏ¸½Ú##########\n");
+    puts("\n##########æ•´å¹´çš„å¼€é”€ç»†èŠ‚##########\n");
 
-    printf("½»Ë°£º                    %.2f\n", tax);
-    printf("½»ÎåÏÕÒ»½ğ£¨Ï¸½ÚÈçÏÂ£©£º  %.2f\n", outShebao + outGongJiJin);
-    printf("--½»ÑøÀÏ±£ÏÕ£º            %.2f\n", outShebao * yangLaoRate / sheBaoRate);
-    printf("--½»Ò½ÁÆ±£ÏÕ£º            %.2f\n", outShebao * yiBaoRate / sheBaoRate);
-    printf("--½»Ê§Òµ±£ÏÕ£º            %.2f\n", outShebao * shiYeRate / sheBaoRate);
-    printf("--½»¹«»ı½ğ£º              %.2f\n\n", outGongJiJin);
-    printf("×ÛºÏË°ºÍÎåÏÕÒ»½ğ£¬×Ü¿ªÏú£º%.2f\n\n", tax + outShebao + outGongJiJin);
+    printf("äº¤ç¨ï¼š                    %.2f\n", tax);
+    printf("äº¤äº”é™©ä¸€é‡‘ï¼ˆç»†èŠ‚å¦‚ä¸‹ï¼‰ï¼š  %.2f\n", outShebao + outGongJiJin);
+    printf("--äº¤å…»è€ä¿é™©ï¼š            %.2f\n", outShebao * yangLaoRate / sheBaoRate);
+    printf("--äº¤åŒ»ç–—ä¿é™©ï¼š            %.2f\n", outShebao * yiBaoRate / sheBaoRate);
+    printf("--äº¤å¤±ä¸šä¿é™©ï¼š            %.2f\n", outShebao * shiYeRate / sheBaoRate);
+    printf("--äº¤å…¬ç§¯é‡‘ï¼š              %.2f\n\n", outGongJiJin);
+    printf("ç»¼åˆç¨å’Œäº”é™©ä¸€é‡‘ï¼Œæ€»å¼€é”€ï¼š%.2f\n\n", tax + outShebao + outGongJiJin);
 
-    puts("\n##########ÕûÄêµÄµ½ÊÖĞ½×ÊÏ¸½Ú##########\n");
-    printf("µ½ÊÖ¹¤×ÊÊÕÈë£º            %.2f\n", rest);
-    printf("¿ÉÓÃ¹«»ı½ğ£º              %.2f\n\n", outGongJiJin * 2);
-    printf("×ÛºÏ¹¤×ÊºÍ¹«»ı½ğ£¬×ÜÊÕÈë£º%.2f\n\n", rest + outGongJiJin * 2);
+    puts("\n##########æ•´å¹´çš„åˆ°æ‰‹è–ªèµ„ç»†èŠ‚##########\n");
+    printf("åˆ°æ‰‹å·¥èµ„æ”¶å…¥ï¼š            %.2f\n", rest);
+    printf("å¯ç”¨å…¬ç§¯é‡‘ï¼š              %.2f\n\n", outGongJiJin * 2);
+    printf("ç»¼åˆå·¥èµ„å’Œå…¬ç§¯é‡‘ï¼Œæ€»æ”¶å…¥ï¼š%.2f\n\n", rest + outGongJiJin * 2);
 
     system("pause");
 }
